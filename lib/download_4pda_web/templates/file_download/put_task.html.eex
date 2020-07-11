@@ -1,0 +1,4 @@
+<script>setTimeout(() => {window.location = "<%= Routes.file_download_path(@conn, :get_file, @uuid) %>"}, 5000)</script>
+<p>Your download should autostart in 5 seconds,
+click <a href="<%= Routes.file_download_path(@conn, :get_file, @uuid) %>">here</a>, if it did not.</p>
+<p>The above link <b>will expire in two minutes</b>, so don't share it!</p>
